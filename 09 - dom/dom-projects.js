@@ -10,16 +10,16 @@ function subscribe() {
 }
 
 //AMAZON SHIP FUNCTION
-let amount = document.querySelector('.js-text-input');
-let getAmount = Number(amount.value);
-let total = document.querySelector('.total');
-const fee = 10;
+
 
 function calculate() {
+  let amount = document.querySelector('.js-text-input');
+  getAmount = amount.value;
+  let total = document.querySelector('.total');
+  
   if (getAmount < 40) {
-    total.innerHTML = `Total: $${getAmount += fee}`
+    getAmount + 10;
+    total.innerHTML = `$ ${getAmount}`
   }
-  else if (getAmount > 40) {
-    total.innerHTML = `Total: $${getAmount} + FREE shipping`
-  }
+  
 }
