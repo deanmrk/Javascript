@@ -17,9 +17,9 @@ const fee = 10;
 
 function calculate() {
   if (getAmount < 40) {
-    total.innerHTML = `Total: ${getAmount += fee}`
+    total.innerHTML = `Total: $${getAmount += fee}`
   }
   else if (getAmount > 40) {
-    total.innerHTML = `Total: ${getAmount} + FREE shipping`
+    total.innerHTML = `Total: $${getAmount} + FREE shipping`
   }
 }
