@@ -70,3 +70,28 @@ function previousButton() {
         previousBtn.classList.remove('isToggled');
     }
 }
+
+//10 H
+function calculate() {
+    const inputText = document.querySelector('.js-input');
+    getText = Number(inputText.value);
+    const total = document.querySelector('.total');
+
+    //check if the input value is less that 0
+    if (getText < 0 || getText === 0) {
+        total.innerHTML = `<span>Error: Cannot be less that $0</span>`
+    }
+
+    if (getText >= 1 && getText < 40) {
+        getText += 10;
+        total.innerHTML = `$ ${getText} + Shipping fee`
+    }
+    else if (getText >= 40) {
+        total.innerHTML = `$ ${getText} + Free Shipping`
+    }
+}
+function enter(event) {
+    if (event.key === 'Enter') {
+        calculate()
+    }
+}

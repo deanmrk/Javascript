@@ -22,11 +22,13 @@
     <button onclick="tenD()" class="btnGamingD btns">Gaming</button> <br>
 
     <!--10 E-->
-    <button onclick="gaming('Gaming')" class="btnGaming btns">Gaming</button>
-    <button onclick="gaming('Music')" class="btnMusic btns">Music</button>
-    <button onclick="gaming('Tech')" class="btnTech btns">Tech</button>
+    <button onclick="gaming('.btnGaming')" class="btnGaming btns">Gaming</button>
+    <button onclick="gaming('.btnMusic')" class="btnMusic btns">Music</button>
+    <button onclick="gaming('.btnTech')" class="btnTech btns">Tech</button> <br>
 
-
+    <input type="text" class="js-input input-text" placeholder="Enter amount" onkeydown="enter(event)"> 
+    <button class="calculateBtn" onclick="calculate()">Calculate</button>
+    <p class="total"></p>
 
 <script src="10-exercises.js"></script>
 </body>

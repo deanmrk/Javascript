@@ -58,3 +58,25 @@ body {
     padding: 10px;
     cursor: pointer;
 }
+
+.input-text {
+    border: 1px solid green;
+    margin-top: 30px;
+    background-color: white;
+    padding: 10px;
+    font-size: 14px;
+    color: green;
+}
+.calculateBtn {
+    border: none;
+    margin-top: 30px;
+    background-color: green;
+    padding: 11px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+span {
+    color: red;
+}
